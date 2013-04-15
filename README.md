@@ -1,3 +1,29 @@
+$ cp -r angular-seed/ herangunode
+/
+
+Remove the remote repo. We don't want to try to be pushing to the angular-seed repo in Github.
+
+> git remote -v
+origin  git@github.com:angular/angular-seed.git (fetch)
+origin  git@github.com:angular/angular-seed.git (push)
+
+> git remote rm origin
+warning: more than one branch.master.remote
+
+
+
+$ cd herangunode/
+$ git add .
+$ git commit -m 'added angular-seed app directory'  ( -m === with message)
+
+$ git remote add origin git@github.com:bobertk/herangunode.git
+(you may need to add repo at github - I still don't get it exactly)
+$ git push -u origin master
+
+now start a working directory:
+$ git checkout -b modify-README
+Switched to a new branch 'modify-README'
+$ git 
 
 
 
